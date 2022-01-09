@@ -298,3 +298,37 @@ header {
     margin: 10px 0 15px;
 }
 /* about us section ends */
+/* our teacher section starts */
+.our-teacher .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 1.5rem;
+}
+.teacher {
+    padding: 1.5rem 1.25rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    text-align: center;
+}
+.teacher-img {
+    filter: grayscale(1);
+}
+.teacher:hover .teacher-img {
+    filter: grayscale(0);
+}
+.teacher-name {
+    color: var(--primary-clr);
+    margin: 1rem 0 .5rem;
+}
+.teacher .social-media {
+    margin-top: 1rem;
+}
+.teacher .social-media a {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 1.2rem;
+    color: var(--primary-clr);
+}
+.teacher .social-media a:hover {
+    color: var(--secondary-clr);
+}
+/* end teacher section starts */
