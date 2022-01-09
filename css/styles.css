@@ -299,7 +299,10 @@ header {
 }
 /* about us section ends */
 /* our teacher section starts */
-.our-teacher .grid {
+.our-teacher {
+    background-color: #F9F9F9;
+}
+.row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -309,6 +312,7 @@ header {
     flex: 0 0 18rem;
     padding: 1.5rem 1.25rem;
     box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    background-color: var(--white-clr);
     text-align: center;
 }
 .teacher-img {
@@ -333,17 +337,14 @@ header {
 .teacher .social-media a:hover {
     color: var(--secondary-clr);
 }
-/* end teacher section starts */
+/* our teacher section ends */
 /* start our courses */
 .our-courses .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
+    gap: 0;
 }
 .course {
     flex: 0 0 20rem;
-    margin: 1.5rem 1.25rem;
+    margin: 1.5rem .75rem;
     padding: 1.5rem 1.25rem;
     border-radius: 8px;
     box-shadow: .3rem .3rem 0 var(--secondary-clr);
@@ -371,3 +372,38 @@ header {
     margin-bottom: 1rem;
 }
 /* end our courses */
+/* reviews section starts */
+.reviews {
+    background-color: #F9F9F9;
+}
+.reviews .row {
+    margin-top: 2.5rem;
+}
+.student-review {
+    flex: 0 0 18rem;
+    padding: 1.5rem 1.25rem;
+    margin-top: 2.5rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    background-color: var(--white-clr);
+    text-align: center;
+}
+.student-img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin: -65px auto 1rem;
+    border: .5rem solid var(--primary-clr);
+    border-left-color: var(--secondary-clr);
+    border-bottom-color: var(--secondary-clr);
+}
+.student-name {
+    color: var(--primary-clr);
+    margin-bottom: .5rem;
+}
+.review-stars {
+    margin-top: .75rem;
+}
+.review-stars li {
+    color: var(--secondary-clr);
+}
+/* reviews section ends */
