@@ -21,7 +21,6 @@
     color: var(--white-clr);
 }
 body {
-    height: 10000px;
     font-size: 16px;
     font-weight: 400;
     line-height: 1;
@@ -446,4 +445,40 @@ header {
     height: 150px;
     resize: none;
 }
-/* end us section starts */
+/* contact us section ends */
+/* footer section starts */
+footer .social-media {
+    display: flex;
+    justify-content: center;
+}
+footer .social-media a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--secondary-clr);
+    border-radius: 50%;
+    color: var(--secondary-clr);
+}
+footer .social-media a:hover {
+    background-color: var(--primary-clr);
+    border-color: var(--primary-clr);
+    color: var(--white-clr);
+}
+footer .credit {
+    display: block;
+    text-align: center;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    border-top: 1px solid #eee;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--text-clr);
+}
+footer .credit span {
+    color: var(--primary-clr);
+}
+/* footer section ends */
