@@ -407,3 +407,43 @@ header {
     color: var(--secondary-clr);
 }
 /* reviews section ends */
+/* contact us section starts */
+.contact-us {
+    background-color: #333333;
+}
+.contact-us .row {
+    align-items: center;
+}
+@media screen and (max-width: 768px) {
+    .contact-us .row {
+        flex-direction: column;
+    }
+}
+.contact-img,
+.contact-form {
+    flex: 1 1 calc(50% - 1.5rem);
+    width: 50%;
+}
+@media screen and (max-width: 768px) {
+    .contact-form {
+        width: 100%;
+        order: 2;
+    }
+    .contact-img {
+        width: 80vw;
+        order: 1;
+    }
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: none;
+}
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+/* end us section starts */
