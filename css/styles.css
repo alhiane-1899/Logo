@@ -17,12 +17,12 @@
     --text-clr: #999999;
 }
 ::selection {
-    background-color: var(--orange-clr);
+    background-color: var(--primary-clr);
     color: var(--white-clr);
 }
 body {
     height: 10000px;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1;
 }
@@ -65,3 +65,87 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 /* end basic rules */
+/* header section starts */
+header {
+    position: fixed;
+    top: 1rem;
+    width: calc(100% - 2rem);
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9999;
+    padding: 15px 30px;
+    background-color: #333;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--secondary-clr);
+}
+.brand i {
+    color: var(--primary-clr);
+    margin-right: .25rem;
+}
+#nav-input {
+    display: none;
+}
+.navbar a {
+    display: inline-block;
+    color: var(--white-clr);
+}
+.navbar a:not(:last-child) {
+    padding-right: 30px;
+}
+.navbar a:hover {
+    color: var(--primary-clr);
+}
+.nav-btn {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .nav-btn {
+        display: block;
+        font-family: "Font Awesome 5 Free";
+        font-size: 1.75rem;
+        font-weight: 900;
+        color: var(--primary-clr);
+        cursor: pointer;
+    }
+    .nav-btn::before {
+        content: "\f0c9";
+    }
+    #nav-input:checked ~ .nav-btn::before {
+        content: "\f00d";
+    }
+    .navbar {
+        position: absolute;
+        top: -100rem;
+        left: 0;
+        width: 100%;
+        margin-top: 1rem;
+        z-index: -1;
+        padding: 1rem;
+        background-color: #333;
+        border-radius: 30px;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+    }
+    #nav-input:checked ~ .navbar {
+        opacity: 1;
+        top: 100%;
+    }
+    .navbar a {
+        display: block;
+        text-align: center;
+        padding: 15px 0;
+    }
+    .navbar a:not(:last-child) {
+        padding-right: 0;
+    }
+}
+/* header section ends */
