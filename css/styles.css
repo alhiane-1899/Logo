@@ -26,4 +26,42 @@ body {
     font-weight: 400;
     line-height: 1;
 }
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+p {
+    line-height: 1.5;
+    color: var(--text-clr);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    color: var(--black-clr);
+}
+.section {
+    padding: 2rem 9%;
+}
+@media screen and (max-width: 991px) {
+    .section {
+        padding: 2rem 1rem;
+    }
+}
+.heading {
+    margin: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.heading h2 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: var(--primary-clr);
+    padding-bottom: 2px;
+}
+@media screen and (max-width: 576px) {
+    .heading h2 {
+        font-size: 2rem;
+    }
+}
 /* end basic rules */
