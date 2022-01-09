@@ -4,5 +4,5 @@ _Complete Responsive Logo Education Website Design_
 
 ## Tools:
 
-1.Html
-2.Css
+1. Html
+2. Css
