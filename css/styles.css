@@ -46,7 +46,7 @@ img {
     height: auto;
 }
 .section {
-    padding: 2rem 9%;
+    padding: 2rem 5%;
 }
 @media screen and (max-width: 991px) {
     .section {
@@ -300,11 +300,13 @@ header {
 /* about us section ends */
 /* our teacher section starts */
 .our-teacher .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    grid-gap: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
 }
 .teacher {
+    flex: 0 0 18rem;
     padding: 1.5rem 1.25rem;
     box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
     text-align: center;
@@ -332,3 +334,40 @@ header {
     color: var(--secondary-clr);
 }
 /* end teacher section starts */
+/* start our courses */
+.our-courses .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.course {
+    flex: 0 0 20rem;
+    margin: 1.5rem 1.25rem;
+    padding: 1.5rem 1.25rem;
+    border-radius: 8px;
+    box-shadow: .3rem .3rem 0 var(--secondary-clr);
+    text-align: center;
+}
+.course-icon {
+    width: 5rem;
+    height: 5rem;
+    margin: -3rem auto 1rem;
+    background-color: var(--primary-clr);
+    border-radius: 50%;
+    box-shadow: 0 0 0 .5rem inset;
+    border: .5rem solid var(--white-clr);
+    border-left-color: var(--primary-clr);
+    border-right-color: var(--primary-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75rem;
+    color: var(--white-clr);
+}
+.course-name {
+    color: var(--secondary-clr);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+/* end our courses */
